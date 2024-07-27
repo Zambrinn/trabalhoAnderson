@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Cabeçalho</title>
+</head>
+<body>
+    <div id="header" class="header">
+        <div class="logo-header">
+            <img src="imagens usadas/pena.webp" class="img-logo-header" alt="Logo do site">
+        </div>
+        <div class="mob" style="display:block; float:left; width:68%;  margin-top: 4px; position:relative; padding-right: 0 ">
+            <img src="imagens usadas/search-magnifying-glass-45dad4.webp" onclick="enviaBusca();" width="26" height="21" style="margin-left: 10px; cursor:pointer; display: block; cursor:pointer; float: left; margin-top: 4px; position: absolute; right: 15px; top: 4px;"> 
+            <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input type="text" required="" pattern=".{4,}" name="Busca" id="Search-bar" class="Search-bar" onkeypress="enterBusca1(event.which)" placeholder="Qual livro você procura?" class="ui-autocomplete-input" autocomplete="off">            
+        </div>  
+        <div class="navigation-header">
+            <a href="#"><button class="btn"><i class="fa fa-user-o"></i></button></a>
+            <a href="#"><button class="btn"><i class="fa fa-heart-o"></i></button></a>
+            <a href="#"><button class="btn"><i class="fa fa-bookmark-o"></i></button></a>
+        </div>  
+    </div>
+</body>
+</html>
